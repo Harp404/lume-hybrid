@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it."
+title: "Lume-Hybrid: A Mamba2 + Differential Attention Hybrid Language Model"
+authors:
+  - given-names: "Harpreet"
+    family-names: "Singh"
+year: 2026
+url: "https://github.com/Harp404/lume-hybrid"
+type: software
+license: Apache-2.0
+keywords:
+  - language-model
+  - mamba2
+  - differential-attention
+  - state-space-model
+  - hybrid-architecture

@@ -1,0 +1,210 @@
+{
+  "arch": "mamba2",
+  "params": 114331104,
+  "target_tokens": 100000000,
+  "final_val_loss": 4.641981840133667,
+  "final_val_ppl": 103.74975940640061,
+  "bpb": 1.5220373137857877,
+  "english_ppl": 30.74285929312668,
+  "repetition_rate": 0.0,
+  "train_val_gap": 0.000790715217590332,
+  "wall_time_min": 26.75484354496002,
+  "history": [
+    {
+      "step": 100,
+      "train_loss": 7.36148738861084,
+      "val_loss": 7.420285606384278,
+      "tokens": 3276800
+    },
+    {
+      "step": 200,
+      "train_loss": 6.353763997554779,
+      "val_loss": 6.440283298492432,
+      "tokens": 6553600
+    },
+    {
+      "step": 300,
+      "train_loss": 6.10050368309021,
+      "val_loss": 6.035393238067627,
+      "tokens": 9830400
+    },
+    {
+      "step": 400,
+      "train_loss": 5.7167288064956665,
+      "val_loss": 5.7629469871521,
+      "tokens": 13107200
+    },
+    {
+      "step": 500,
+      "train_loss": 5.451058506965637,
+      "val_loss": 5.633177185058594,
+      "tokens": 16384000
+    },
+    {
+      "step": 600,
+      "train_loss": 5.69346684217453,
+      "val_loss": 5.479483509063721,
+      "tokens": 19660800
+    },
+    {
+      "step": 700,
+      "train_loss": 5.340507864952087,
+      "val_loss": 5.397623729705811,
+      "tokens": 22937600
+    },
+    {
+      "step": 800,
+      "train_loss": 5.1755483746528625,
+      "val_loss": 5.330864810943604,
+      "tokens": 26214400
+    },
+    {
+      "step": 900,
+      "train_loss": 5.155462622642517,
+      "val_loss": 5.262109375,
+      "tokens": 29491200
+    },
+    {
+      "step": 1000,
+      "train_loss": 5.080961287021637,
+      "val_loss": 5.178915405273438,
+      "tokens": 32768000
+    },
+    {
+      "step": 1100,
+      "train_loss": 4.9948588609695435,
+      "val_loss": 5.165659332275391,
+      "tokens": 36044800
+    },
+    {
+      "step": 1200,
+      "train_loss": 4.947993099689484,
+      "val_loss": 5.104275321960449,
+      "tokens": 39321600
+    },
+    {
+      "step": 1300,
+      "train_loss": 5.063725769519806,
+      "val_loss": 5.041339969635009,
+      "tokens": 42598400
+    },
+    {
+      "step": 1400,
+      "train_loss": 4.962728917598724,
+      "val_loss": 5.001952362060547,
+      "tokens": 45875200
+    },
+    {
+      "step": 1500,
+      "train_loss": 4.9069841504096985,
+      "val_loss": 4.980425834655762,
+      "tokens": 49152000
+    },
+    {
+      "step": 1600,
+      "train_loss": 5.0098400712013245,
+      "val_loss": 4.952689743041992,
+      "tokens": 52428800
+    },
+    {
+      "step": 1700,
+      "train_loss": 4.785359084606171,
+      "val_loss": 4.944541549682617,
+      "tokens": 55705600
+    },
+    {
+      "step": 1800,
+      "train_loss": 4.839879095554352,
+      "val_loss": 4.916642856597901,
+      "tokens": 58982400
+    },
+    {
+      "step": 1900,
+      "train_loss": 4.748806357383728,
+      "val_loss": 4.890980529785156,
+      "tokens": 62259200
+    },
+    {
+      "step": 2000,
+      "train_loss": 4.62983113527298,
+      "val_loss": 4.872171401977539,
+      "tokens": 65536000
+    },
+    {
+      "step": 2100,
+      "train_loss": 4.565303206443787,
+      "val_loss": 4.844014453887939,
+      "tokens": 68812800
+    },
+    {
+      "step": 2200,
+      "train_loss": 4.690358221530914,
+      "val_loss": 4.831863021850586,
+      "tokens": 72089600
+    },
+    {
+      "step": 2300,
+      "train_loss": 4.69783478975296,
+      "val_loss": 4.811878108978272,
+      "tokens": 75366400
+    },
+    {
+      "step": 2400,
+      "train_loss": 4.658571004867554,
+      "val_loss": 4.81053409576416,
+      "tokens": 78643200
+    },
+    {
+      "step": 2500,
+      "train_loss": 4.531907916069031,
+      "val_loss": 4.797937202453613,
+      "tokens": 81920000
+    },
+    {
+      "step": 2600,
+      "train_loss": 4.563712894916534,
+      "val_loss": 4.791636562347412,
+      "tokens": 85196800
+    },
+    {
+      "step": 2700,
+      "train_loss": 4.578978359699249,
+      "val_loss": 4.783494853973389,
+      "tokens": 88473600
+    },
+    {
+      "step": 2800,
+      "train_loss": 4.675644040107727,
+      "val_loss": 4.781306552886963,
+      "tokens": 91750400
+    },
+    {
+      "step": 2900,
+      "train_loss": 4.686400771141052,
+      "val_loss": 4.7807516098022464,
+      "tokens": 95027200
+    },
+    {
+      "step": 3000,
+      "train_loss": 4.601685881614685,
+      "val_loss": 4.7748089790344235,
+      "tokens": 98304000
+    },
+    {
+      "step": 3051,
+      "train_loss": 4.642772555351257,
+      "val_loss": 4.7746912956237795,
+      "tokens": 99975168
+    }
+  ],
+  "samples": [
+    {
+      "prompt": "The quick brown fox jumps over the",
+      "generation": "The quick brown fox jumps over the sea surface, or from a narrow, dark surface, to a thin, rounded, or oval-like pattern. The red-burning head is more prone to collapse and can be observed from the lower part of the earth.\nThe upper edge of the mountain"
+    },
+    {
+      "prompt": "Climate change is caused by",
+      "generation": "Climate change is caused by warming and greenhouse gases and the rising temperatures increase the number of countries that are affected by climate change, a recent study into that are exploring how climate change may affect the survival of the world. This change could also affect the life of the people without the"
+    }
+  ]
+}

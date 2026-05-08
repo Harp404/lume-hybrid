@@ -1,0 +1,10 @@
+torch>=2.5.0
+transformers>=4.40.0,<5.0
+mamba-ssm>=2.0.0
+causal-conv1d>=1.4.0
+safetensors
+datasets<4.0
+lm-eval==0.4.5
+huggingface_hub
+numpy
+tqdm

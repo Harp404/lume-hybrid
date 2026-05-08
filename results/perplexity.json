@@ -1,0 +1,52 @@
+{
+  "metric": "bits_per_byte",
+  "metric_description": "Cross-entropy in bits, normalized per byte of source text. Lower is better. Tokenizer-agnostic for fair cross-architecture comparison.",
+  "results": [
+    {
+      "model": "Lume-Hybrid",
+      "params": "390M",
+      "tokens_seen": "30B",
+      "scores": {
+        "slimpajama": 0.979,
+        "fineweb_edu": 0.914,
+        "code": 0.728,
+        "math": 1.005,
+        "wikitext": 1.257,
+        "pile": 0.959
+      }
+    },
+    {
+      "model": "Pythia-410M-deduped",
+      "params": "410M",
+      "tokens_seen": "30B",
+      "checkpoint": "step ~14400",
+      "scores": {
+        "slimpajama": 0.959,
+        "fineweb_edu": 0.954,
+        "code": 0.571,
+        "math": 1.012,
+        "wikitext": 1.193,
+        "pile": 0.805
+      }
+    },
+    {
+      "model": "Pythia-410M-deduped",
+      "params": "410M",
+      "tokens_seen": "300B",
+      "checkpoint": "step ~143000 (full run)",
+      "scores": {
+        "slimpajama": 0.905,
+        "fineweb_edu": 0.898,
+        "code": 0.526,
+        "math": 0.962,
+        "wikitext": 1.118,
+        "pile": 0.753
+      }
+    }
+  ],
+  "notes": [
+    "At matched 30B-token budget, Lume-Hybrid beats Pythia on fineweb_edu and ties on math.",
+    "Pythia advantage on code/pile is partly a training-data confound: Pythia trained on the Pile, which includes GitHub.",
+    "The 300B-token Pythia row is a reference for the trajectory of continued training, not a fair head-to-head."
+  ]
+}

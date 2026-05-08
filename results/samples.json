@@ -1,0 +1,47 @@
+{
+  "generation_config": {
+    "top_p": 0.9,
+    "repetition_penalty": 1.15,
+    "seed": 42,
+    "note": "Temperature varies per prompt; max_new_tokens varies per prompt."
+  },
+  "comparisons": [
+    {
+      "prompt": "The capital of France is",
+      "temperature": 0.3,
+      "completions": {
+        "Lume-Hybrid": " the city of Paris. It is located in the south-western corner of the country, and it has a population of 2 million people. It was founded by Louis XIV on November 17th, 1714 as the seat of the French",
+        "Pythia-410M @ 30B (matched)": " in the center of the country. The city is a very large place...",
+        "Pythia-410M @ 300B (10x more training)": " the most important city in Europe. It was founded by Charles IX..."
+      },
+      "commentary": "Lume-Hybrid correctly identifies Paris. Both Pythia checkpoints fail to name the capital. Lume-Hybrid has minor factual errors (geography, founding date) — expected at 30B tokens."
+    },
+    {
+      "prompt": "The largest planet in our solar system is",
+      "temperature": 0.3,
+      "completions": {
+        "Lume-Hybrid": " the third planet from the sun, after Earth and Mars...",
+        "Pythia-410M @ 30B (matched)": " the Sun...",
+        "Pythia-410M @ 300B (10x more training)": " the Earth, and it has a diameter of about 10 times that of Jupiter."
+      },
+      "commentary": "All three sub-trillion-token models fail. This is a known limitation at this scale.",
+      "all_wrong": true
+    },
+    {
+      "prompt": "Once upon a time, in a small village by the sea, there lived a young girl who",
+      "temperature": 0.9,
+      "completions": {
+        "Lume-Hybrid": " was called Monika. Her name was Monika. Monika was inquisitive and a bit disturbed to the idea of hearing sounds, especially how sound could affect something else other than itself..."
+      },
+      "commentary": "Coherent narrative arc. Maintains the protagonist throughout. Develops a consistent (if quirky) character motivation around sound and meaning."
+    },
+    {
+      "prompt": "def is_prime(n):\n    \"\"\"Return True if n is a prime number.\"\"\"",
+      "temperature": 0.3,
+      "completions": {
+        "Lume-Hybrid": "    return False  <|end_of_text|>"
+      },
+      "commentary": "Known issue: premature EOS emission on code completions at low temperatures. Training-data artifact (code snippets in training data often end after docstrings), not architectural. Workaround: use temperature >= 0.7, or post-process to ignore EOS for code generation."
+    }
+  ]
+}

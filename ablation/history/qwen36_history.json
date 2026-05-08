@@ -1,0 +1,210 @@
+{
+  "arch": "qwen36",
+  "params": 115730000,
+  "target_tokens": 100000000,
+  "final_val_loss": 4.503689074516297,
+  "final_val_ppl": 90.34982449331312,
+  "bpb": 1.4766931576160152,
+  "english_ppl": 29.59041397312518,
+  "repetition_rate": 0.02922077922077923,
+  "train_val_gap": 0.05718622207641566,
+  "wall_time_min": 36.15426106850306,
+  "history": [
+    {
+      "step": 100,
+      "train_loss": 7.827329218387604,
+      "val_loss": 7.959502506256103,
+      "tokens": 3276800
+    },
+    {
+      "step": 200,
+      "train_loss": 6.709354043006897,
+      "val_loss": 6.857314205169677,
+      "tokens": 6553600
+    },
+    {
+      "step": 300,
+      "train_loss": 6.323613166809082,
+      "val_loss": 6.27603588104248,
+      "tokens": 9830400
+    },
+    {
+      "step": 400,
+      "train_loss": 5.912089645862579,
+      "val_loss": 5.939253139495849,
+      "tokens": 13107200
+    },
+    {
+      "step": 500,
+      "train_loss": 5.610834002494812,
+      "val_loss": 5.766067790985107,
+      "tokens": 16384000
+    },
+    {
+      "step": 600,
+      "train_loss": 5.82115912437439,
+      "val_loss": 5.584419918060303,
+      "tokens": 19660800
+    },
+    {
+      "step": 700,
+      "train_loss": 5.446493029594421,
+      "val_loss": 5.4956108093261715,
+      "tokens": 22937600
+    },
+    {
+      "step": 800,
+      "train_loss": 5.274654686450958,
+      "val_loss": 5.410229969024658,
+      "tokens": 26214400
+    },
+    {
+      "step": 900,
+      "train_loss": 5.249850690364838,
+      "val_loss": 5.322042942047119,
+      "tokens": 29491200
+    },
+    {
+      "step": 1000,
+      "train_loss": 5.1480633020401,
+      "val_loss": 5.237584590911865,
+      "tokens": 32768000
+    },
+    {
+      "step": 1100,
+      "train_loss": 5.052724897861481,
+      "val_loss": 5.185926532745361,
+      "tokens": 36044800
+    },
+    {
+      "step": 1200,
+      "train_loss": 4.960739195346832,
+      "val_loss": 5.0970532417297365,
+      "tokens": 39321600
+    },
+    {
+      "step": 1300,
+      "train_loss": 5.081734299659729,
+      "val_loss": 5.014316463470459,
+      "tokens": 42598400
+    },
+    {
+      "step": 1400,
+      "train_loss": 4.961390793323517,
+      "val_loss": 4.932819747924805,
+      "tokens": 45875200
+    },
+    {
+      "step": 1500,
+      "train_loss": 4.8861945271492,
+      "val_loss": 4.878146362304688,
+      "tokens": 49152000
+    },
+    {
+      "step": 1600,
+      "train_loss": 4.982191026210785,
+      "val_loss": 4.829575920104981,
+      "tokens": 52428800
+    },
+    {
+      "step": 1700,
+      "train_loss": 4.7651108503341675,
+      "val_loss": 4.793869495391846,
+      "tokens": 55705600
+    },
+    {
+      "step": 1800,
+      "train_loss": 4.8238473534584045,
+      "val_loss": 4.746819019317627,
+      "tokens": 58982400
+    },
+    {
+      "step": 1900,
+      "train_loss": 4.697893261909485,
+      "val_loss": 4.718906116485596,
+      "tokens": 62259200
+    },
+    {
+      "step": 2000,
+      "train_loss": 4.5787975788116455,
+      "val_loss": 4.6839367866516115,
+      "tokens": 65536000
+    },
+    {
+      "step": 2100,
+      "train_loss": 4.524653375148773,
+      "val_loss": 4.652332496643067,
+      "tokens": 68812800
+    },
+    {
+      "step": 2200,
+      "train_loss": 4.64183509349823,
+      "val_loss": 4.630283641815185,
+      "tokens": 72089600
+    },
+    {
+      "step": 2300,
+      "train_loss": 4.601516842842102,
+      "val_loss": 4.607645797729492,
+      "tokens": 75366400
+    },
+    {
+      "step": 2400,
+      "train_loss": 4.594828128814697,
+      "val_loss": 4.594498252868652,
+      "tokens": 78643200
+    },
+    {
+      "step": 2500,
+      "train_loss": 4.481627583503723,
+      "val_loss": 4.58344087600708,
+      "tokens": 81920000
+    },
+    {
+      "step": 2600,
+      "train_loss": 4.508264362812042,
+      "val_loss": 4.573058795928955,
+      "tokens": 85196800
+    },
+    {
+      "step": 2700,
+      "train_loss": 4.483029782772064,
+      "val_loss": 4.568118381500244,
+      "tokens": 88473600
+    },
+    {
+      "step": 2800,
+      "train_loss": 4.550516307353973,
+      "val_loss": 4.56272554397583,
+      "tokens": 91750400
+    },
+    {
+      "step": 2900,
+      "train_loss": 4.602890610694885,
+      "val_loss": 4.5597456932067875,
+      "tokens": 95027200
+    },
+    {
+      "step": 3000,
+      "train_loss": 4.536957561969757,
+      "val_loss": 4.557706546783447,
+      "tokens": 98304000
+    },
+    {
+      "step": 3051,
+      "train_loss": 4.560875296592712,
+      "val_loss": 4.5572436332702635,
+      "tokens": 99975168
+    }
+  ],
+  "samples": [
+    {
+      "prompt": "The quick brown fox jumps over the",
+      "generation": "The quick brown fox jumps over the past century will find a new story from a wild, white, and Black book that the young man has been the first to speak to. One can see the scene when he goes to the museum in 2016.\nThe story is interesting but as"
+    },
+    {
+      "prompt": "Climate change is caused by",
+      "generation": "Climate change is caused by the average annual peak of the US government on the country\u2019s income tax.\nWith a recent decline, a large majority of the nations have been paid for the growth of the country\u2019s government. This change, however, is not just about the US government"
+    }
+  ]
+}

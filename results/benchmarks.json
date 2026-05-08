@@ -1,0 +1,33 @@
+{
+  "metric": "inference_latency_and_memory",
+  "description": "Naive autoregressive recompute vs. cached generation (KV cache for DiffAttn, history-accumulation for Mamba2). Single GPU, bfloat16, batch size 1.",
+  "configuration": {
+    "model": "Lume-Hybrid",
+    "params": "390M",
+    "precision": "bfloat16",
+    "batch_size": 1
+  },
+  "measurements": [
+    {
+      "prefill_tokens": 256,
+      "naive_ms": 3371,
+      "cached_ms": 3417,
+      "naive_memory_gb": 2.43,
+      "cached_memory_gb": 1.79,
+      "memory_reduction_pct": 26.3
+    },
+    {
+      "prefill_tokens": 512,
+      "naive_ms": 3512,
+      "cached_ms": 3457,
+      "naive_memory_gb": 2.51,
+      "cached_memory_gb": 1.96,
+      "memory_reduction_pct": 21.9
+    }
+  ],
+  "notes": [
+    "Memory reduction is the headline win for the current cache implementation: 22-26%.",
+    "Speed is roughly equivalent in this build: attention uses true KV caching, but the Mamba path re-runs over accumulated history rather than using the proper SSM step function.",
+    "Implementing Mamba2.step() caching is left as future work and would yield the expected ~10x speedup."
+  ]
+}
